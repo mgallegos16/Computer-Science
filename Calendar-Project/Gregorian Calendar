@@ -1,5 +1,11 @@
 //Gregorian Calendar
 public class Gregorian Calendar
 public static void main(String[] args){
-GregorianCalendar cal = new GregorianCalendar(); // Today’s date
+GregorianCalendar calendar = new GregorianCalendar(); // Today’s date
+//set date to today
+calendar.set(Calendar.YEAR, 2015);
+calendar.set(Calendar.MONTH, 10); //10 = november
+calendar.set(Calendar.DAY_OF_MONTH, 19); //today
+//add one hundred days 
+calendar.add(Calendar.DAY_OF_MONTH, 100);
 }
