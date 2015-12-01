@@ -1,7 +1,7 @@
 import java.util.Calendar; 
 import java.util.GregorianCalendar;
 
-public class MyCalendar{
+public class MyCalendar {
 	private GregorianCalendar cal = new GregorianCalendar (); // today’s date
 	private GregorianCalendar eckertsBirthday = new GregorianCalendar(1919, Calendar.APRIL, 9);
 	private int dayOfMonth;
@@ -24,4 +24,92 @@ public int getMonth () {return month;}
 public int getYear() {return year;}
 public int getWeekday() {return weekday;}
 //advanced features 
-public String getMonthName () {
+    public String getMonthName(){
+        String mName="";
+        switch (month){
+            case 0:{
+                mName ="January";
+                break;
+            }
+            case 1:{
+                mName="February";
+                break;
+            }
+            case 2:{
+                mName="March";
+                break;
+            }
+            case 3:{
+                mName="April";
+                break;
+            }
+            case 4:{
+                mName="May";
+                break;
+            }
+            case 5:{
+                mName="June";
+                break;
+            }
+            case 6:{
+                mName="July";
+                break;
+            }
+            case 7:{
+                mName="August";
+                break;
+            }
+            case 8:{
+                mName="September";
+                break;
+            }
+            case 9:{
+                mName="October";
+                break;
+            }
+            case 10:{
+                mName="November";
+                break;
+            }
+            case 11:{
+                mName="December";
+                break;
+            }
+        }
+        return mName;
+    }
+    public String getWeekDayName(){
+        String weekDayName ="";
+        switch (weekday){
+            case 1:{
+                weekDayName="Sunday";
+                break;
+            }
+            case 2:{
+                weekDayName="Monday";
+                break;
+            }
+            case 3:{
+                weekDayName="Tuesday";
+                break;
+            }
+            case 4:{
+                weekDayName="Wednesday";
+                break;
+            }
+            case 5:{
+                weekDayName="Thursday";
+                break;
+            }
+            case 6:{
+                weekDayName="Friday";
+                break;
+            }
+            case 7:{
+                weekDayName="Saturday";
+                break;
+            }
+        }
+        return weekDayName;
+    }
+}
