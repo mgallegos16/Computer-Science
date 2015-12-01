@@ -1,0 +1,27 @@
+import java.util.Calendar; 
+import java.util.GregorianCalendar;
+
+public class MyCalendar{
+	private GregorianCalendar cal = new GregorianCalendar (); // today’s date
+	private GregorianCalendar eckertsBirthday = new GregorianCalendar(1919, Calendar.APRIL, 9);
+	private int dayOfMonth;
+	private int month; 
+	private int year; 
+	private int weekday; // 1 is sunday 
+public void set NewDate(int numDays) {
+		cal.add(Calendar.DAY_OF_MONTH, numDays);
+}
+public void setDate Parameters (){
+	dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+	month = cal.get(Calendar.MONTH);
+	year = cal.get(Calendar.YEAR);
+	weekday = cal.get(Calendar.DAY_OF_WEEK);
+}
+public GregorianCalendar getNewDate() (return cal;)
+
+public int getDayofMonth() {return dayOfMonth;}
+public int getMonth () {return month;}
+public int getYear() {return year;}
+public int getWeekday() {return weekday;}
+//advanced features 
+public String getMonthName () {
